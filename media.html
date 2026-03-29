@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1 {
+        font-size: 20px;
+        text-align: center;
+      }
+      iframe {
+        display: block;
+        margin-bottom: 50px;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      video {
+        display: block;
+        margin-bottom: 50px;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      audio {
+        display: block;
+        margin-bottom: 50px;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    </style>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- 여기는 메뉴입니다 -->
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">WebDemo</div>
+        <ul class="nav">
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/about.html">About</a>
+          </li>
+          <li>
+            <a href="/contact.html">Contact</a>
+          </li>
+          <li>
+            <a href="/table.html">Table</a>
+          </li>
+          <li>
+            <a href="/media.html">Media</a>
+          </li>
+          <li>
+            <a href="/list.html">List</a>
+          </li>
+          <li>
+            <a href="/form.html">Log In</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <h1>키보드 치는 영상</h1>
+    <video width="560" height="315" controls>
+      <source src="img/video.mp4" type="video/mp4" />
+    </video>
+
+    <h1>웹프로그래밍 영상</h1>
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/4mRae9N2pU4?si=1OuiXIuKiGCV0sHA"
+      title="YouTube video player"
+      frameborder="0"
+      allow="
+        accelerometer;
+        autoplay;
+        clipboard-write;
+        encrypted-media;
+        gyroscope;
+        picture-in-picture;
+        web-share;
+      "
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+
+    <h1>비 내리는 소리</h1>
+    <audio controls>
+      <source src="img/audio.mp3" type="audio/ogg" />
+    </audio>
+
+    <script src="main.js"></script>
+  </body>
+</html>

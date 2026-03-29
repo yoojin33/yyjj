@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+  <link rel="stylesheet" href="style.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table {
+        width: 100%;
+        max-width: 900px;
+        border-collapse: collapse;
+        text-align: center;
+        font-family: sans-serif;
+      }
+      caption {
+        font-size: 20px;
+        font-weight: bold;
+        padding: 10px;
+      }
+      th,
+      td {
+        border: 1px solid #ddd;
+        height: 50px;
+        width: 15%;
+      }
+      th {
+        background-color: #f8f8f8;
+        font-weight: normal;
+      }
+
+      /* 과목별 색상 지정 */
+      .web {
+        background-color: #ee7a6d;
+        color: white;
+      }
+      .server {
+        background-color: #94c65f;
+        color: white;
+      }
+      .network {
+        background-color: #729eeb;
+        color: white;
+      }
+      .security {
+        background-color: #efbb5a;
+        color: white;
+      }
+      .english {
+        background-color: #78c4b1;
+        color: white;
+      }
+      .movie {
+        background-color: #9a82e0;
+        color: white;
+      }
+      .beauty {
+        background-color: #fca15d;
+        color: white;
+      }
+
+      .room {
+        font-size: 0.8em;
+        display: block;
+        margin-top: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 여기는 메뉴입니다 -->
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">WebDemo</div>
+        <ul class="nav">
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/about.html">About</a>
+          </li>
+          <li>
+            <a href="/contact.html">Contact</a>
+          </li>
+          <li>
+            <a href="/table.html">Table</a>
+          </li>
+          <li>
+            <a href="/media.html">Media</a>
+          </li>
+          <li>
+            <a href="/list.html">List</a>
+          </li>
+          <li>
+            <a href="/form.html">Log In</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <table>
+      <caption>
+        시간표
+      </caption>
+      <thead>
+        <tr>
+          <th></th>
+          <th>월</th>
+          <th>화</th>
+          <th>수</th>
+          <th>목</th>
+          <th>금</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>9</td>
+          <td></td>
+          <td class="web" rowspan="2">
+            웹프로그래밍<span class="room">C6-0815</span>
+          </td>
+          <td class="server" rowspan="2">
+            서버구축및운영실습<span class="room">C6-0832</span>
+          </td>
+          <td class="network" rowspan="4">
+            네트워크보안<span class="room">C6-0815</span>
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>11</td>
+          <td></td>
+          <td class="security" rowspan="2">
+            보안자료구조<span class="room">C6-0833</span>
+          </td>
+          <td class="english" rowspan="2">
+            English for Global Citizens III<span class="room">C7-0114</span>
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>12</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td class="web" rowspan="2">
+            웹프로그래밍<span class="room">C6-0815</span>
+          </td>
+          <td class="server" rowspan="2">
+            서버구축및운영실습<span class="room">C6-0832</span>
+          </td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td class="security" rowspan="2">
+            보안자료구조<span class="room">C6-0833</span>
+          </td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td class="movie" rowspan="3">영화속음악이야기</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td class="beauty" rowspan="2">뷰티와문화</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <script src="main.js"></script>
+  </body>
+</html>
